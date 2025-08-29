@@ -10,7 +10,9 @@ if __name__ == "__main__":
                     "test 123 a",
                     "test 123 b",
                     "test 123 c",
-                    "test 123 d"]
+                    "test 123 d",
+                    "A&B",
+                    "&amp;]
     
     # Match example.
     exp_1 = r"[Tt][Ee][Ss][Tt] .*[A-Ca-c]"
