@@ -29,3 +29,14 @@ if __name__ == "__main__":
     for test_string in test_strings:
         result = exp_2_comp.findall(test_string)
         print(result, "\n")
+
+    # Replace example.
+    exp_3 = r"&(?!amp;)"
+    exp_3_comp = re.compile(exp_3)
+
+    exp_4 = r"&amp;"
+    exp_4_comp = re.compile(exp_4)
+    
+    for test_string in test_strings:
+        result = re.sub(exp_3, exp_4, test_string)
+        print(result, "\n")
